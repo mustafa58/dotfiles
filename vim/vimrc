@@ -1,0 +1,16 @@
+set number
+set hlsearch
+syntax on
+set spelllang=en,tr
+colorscheme desert
+"set listchars+=space:·   it is too much
+set listchars=tab:»›,nbsp:␣,trail:•,extends:⟩,precedes:⟨,space:·,eol: "eol:↲
+nnoremap ü :set list!<CR>
+cnoremap W w !sudo tee % >/dev/null
+set viminfo+=!
+set viminfofile=$XDG_STATE_HOME/vim/viminfo
+let g:netrw_preview = 1
+let g:netrw_alto = 0
+let g:netrw_keepdir = 0
+let g:netrw_home=$XDG_STATE_HOME.'/vim'
+call netrw_preview#attach()
